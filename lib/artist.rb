@@ -10,6 +10,7 @@ class Artist
     song.artist = self
     if self = " "
       return nil
+    end
   end
 
   def songs
