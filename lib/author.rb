@@ -5,7 +5,7 @@ class Author
 
   def initialize(name)
     @name = name
-    @title = []
+    @posts = []
   end
 
   def add_post(post)
@@ -14,13 +14,13 @@ class Author
     @@post_count +=1
   end
 
-  def post
-    @post
+  def posts
+    @posts
   end
 
   def add_post_by_title(title)
     post = Post.new(title)
-    @post << post
+    @posts << post
     post.author = self
     @@post_count += 1
   end
