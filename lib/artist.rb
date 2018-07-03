@@ -8,6 +8,8 @@ class Artist
   def add_song(song)
     @songs << song
     song.artist = self
+    if self = " "
+      return nil
   end
 
   def songs
