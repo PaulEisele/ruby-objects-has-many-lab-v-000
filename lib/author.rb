@@ -29,8 +29,4 @@ class Author
     @@post_count
   end
 
-  def author_name
-    self.author.name
-  end
-
 end
